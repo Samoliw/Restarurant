@@ -1,135 +1,40 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Sam's Restaurant</title>
-
-        
-        <link rel="stylesheet" href="styles.css">
-
-
-<style>
-
-body{
-    background-color: white;
-}
-
-#header-nav{
-background-color:#FF7C00;
-height:100px;
-}
-
-#logo-img{
-  width:150px;
-  height:50px;
-  position:relative;
-  left:2%;
-  top:40%;
+<head>
   
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- .navbar-brand, a:link{
-  text-decoration:none;
-  color:white;
-   position:relative;
-   left:2%;
-   top:-25px;
-   font-family:monospace;
-   font-size:20px;
-  
-}
+  <style>
 
-.dropbtn {
-   position:absolute;
-  top:5%;
-  right:3%;
-  background-color: white;
-  color:#FF7C00 ;
-  width:50px;
-  height:50px;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-  border-radius:20%;
-  
-}
 
-.dropdown {
+  </style>
+</head>
+<body>
 
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right:0%;
-  top:19%;
-  width: 300px;
-  height:0px;
-  
-}
 
-.dropdown-content a {
-  color: #FF7C00;
-  background-color:white;
-  padding: 0px 150px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #FF7C00;color:white;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: white;
-}
-
-@media(min-width:768px){
-
-  .dropbtn{
-    display:none;
-  }
-
-}
-</style>
-
-    </head>
-
-    <body>
-        <header>
-            <nav id="header-nav" class="navbar navbar-default">
-                <div class="container">
-                  <div class="navbar-header">
-                    <a href="index.html" >
-                      <div id="logo-img" alt="logo image">
-                      </div>
-                     
-                    </a>
-                    
-                </div>  
-                  <div class="navbar-brand">
-                    <a href="index.html"><h1>TREMONT</h1></a>
-                  </div>
-                 <div class="dropdown">
-              <button class="dropbtn">Menu</button>
-                  <div class="dropdown-content">
-               <a href="#">Link 1</a>
-               <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+<div class="topnav">
+  <a href="index.html" class="active">TREMONT</a>
+  <div id="myLinks">
+    <a href="#news">Menu</a>
+    <a href="#contact">Reserve</a>
+    <a href="#about">Menu</a>
   </div>
-</div> 
-                
-               </nav>  
-              
-        </header>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-        
-        
-    </body>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
 </html>
